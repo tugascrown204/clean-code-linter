@@ -9,6 +9,7 @@ function main() {
 
   if (!filePath) {
     console.error('Please provide a path to the code or pipe input.');
+    console.error('Usage: cli.js <file-path>');
     process.exit(1);
   }
 
