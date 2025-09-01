@@ -14,7 +14,7 @@ function main() {
   }
 
   // Check if path is a file
-  if (fs.existsSync(filePath)) {
+  if (fs.existsSync(filePath) && fs.lstatSync(filePath).isFile()) {
     try {
       codeToLint = fs.readFileSync(path.resolve(filePath), 'utf-8');
     } catch (error) {
