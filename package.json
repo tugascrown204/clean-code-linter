@@ -1,6 +1,6 @@
 {
   "name": "clean-code-linter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A linter to check code quality against clean code principles.",
   "main": "index.js",
   "bin": {
