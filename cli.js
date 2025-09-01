@@ -14,9 +14,19 @@ function main() {
 
   // Check if path is a file
   if (fs.existsSync(filePath)) {
-    codeToLint = fs.readFileSync(path.resolve(filePath), 'utf-8');
+    try {
+      codeToLint = fs.readFileSync(path.resolve(filePath), 'utf-8');
+    } catch (error) {
+      console.error('Error reading the file:', error.message);
+      process.exit(1);
+    }
   } else {
-    codeToLint = fs.readFileSync(0, 'utf-8'); // read from stdin
+    try {
+      codeToLint = fs.readFileSync(0, 'utf-8'); // read from stdin
+    } catch (error) {
+      console.error('Error reading from stdin:', error.message);
+      process.exit(1);
+    }
   }
 
   const linter = new CleanCodeLinter();
