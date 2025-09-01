@@ -3,7 +3,7 @@
 We love contributions from the community! Here’s how you can help:
 
 ## Reporting Issues
-If you find a bug or have a feature request, please open an issue on GitHub.
+If you find a bug or have a feature request, please open an issue on GitHub. We encourage you to use our issue templates for more structured reporting.
 
 ## Pull Requests
 1. Fork the repository.
