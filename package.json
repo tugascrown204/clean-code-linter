@@ -1,0 +1,19 @@
+{
+  "name": "clean-code-linter",
+  "version": "1.0.0",
+  "description": "A linter to check code quality against clean code principles.",
+  "main": "index.js",
+  "bin": {
+    "clean-code-linter": "cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^27.0.0"
+  },
+  "keywords": ["linter", "clean code", "quality"],
+  "author": "YOUR NAME",
+  "license": "MIT"
+}
