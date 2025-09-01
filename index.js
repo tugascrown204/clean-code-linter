@@ -20,8 +20,7 @@ class CleanCodeLinter {
       issues.push('Found a bad practice in the code.');
     }
     // New linting rule for console logs
-    const consoleLogRegex = /console\.log\s*\(/;
-    if (consoleLogRegex.test(code)) {
+    if (/console\.log\s*\(/.test(code)) {
       issues.push('Avoid using console.log in your code.');
     }
     return issues;
